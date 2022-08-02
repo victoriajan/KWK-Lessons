@@ -17,6 +17,7 @@
 		BD6C579F28982BC6001F28BD /* finalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C579E28982BC6001F28BD /* finalProjectTests.swift */; };
 		BD6C57A928982BC6001F28BD /* finalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C57A828982BC6001F28BD /* finalProjectUITests.swift */; };
 		BD6C57AB28982BC6001F28BD /* finalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C57AA28982BC6001F28BD /* finalProjectUITestsLaunchTests.swift */; };
+		BD6C57B8289968EC001F28BD /* cameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C57B7289968EC001F28BD /* cameraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		BD6C57A428982BC6001F28BD /* finalProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = finalProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6C57A828982BC6001F28BD /* finalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectUITests.swift; sourceTree = "<group>"; };
 		BD6C57AA28982BC6001F28BD /* finalProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = finalProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BD6C57B7289968EC001F28BD /* cameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cameraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BD6C578628982BC3001F28BD /* SceneDelegate.swift */,
 				BD6C578828982BC3001F28BD /* ViewController.swift */,
 				BD6C578A28982BC3001F28BD /* Main.storyboard */,
+				BD6C57B7289968EC001F28BD /* cameraViewController.swift */,
 				BD6C579028982BC6001F28BD /* Assets.xcassets */,
 				BD6C579228982BC6001F28BD /* LaunchScreen.storyboard */,
 				BD6C579528982BC6001F28BD /* Info.plist */,
@@ -263,6 +266,7 @@
 			files = (
 				BD6C578928982BC3001F28BD /* ViewController.swift in Sources */,
 				BD6C578528982BC3001F28BD /* AppDelegate.swift in Sources */,
+				BD6C57B8289968EC001F28BD /* cameraViewController.swift in Sources */,
 				BD6C578F28982BC3001F28BD /* finalProject.xcdatamodeld in Sources */,
 				BD6C578728982BC3001F28BD /* SceneDelegate.swift in Sources */,
 			);
