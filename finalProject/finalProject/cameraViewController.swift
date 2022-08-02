@@ -11,21 +11,36 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     var imagePicker = UIImagePickerController()
     
-    @IBAction func takePictureTapped(_ sender: UIButton) {
-        
-        imagePicker.sourceType = .camera
-        
-        present(imagePicker, animated: true, completion: nil)
-    }
-    @IBAction func photoLibraryTapped(_ sender: UIButton) {
-        imagePicker.sourceType = .photoLibrary
-        present(imagePicker, animated: true, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func takePictureTapped(_ sender: UIButton) {
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBAction func photoLibraryTapped(_ sender: UIButton) {
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true, completion: nil)
+    }
+    
+    @IBOutlet weak var displayImage: UIImageView!
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            displayImage.image = selectedImage
+        }
+        
+        imagePicker.dismiss(animated: true, completion: nil)
+    }
+    
+    
+        
+   
 
 
     /*
