@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD4D8CEB289ABDC800539BBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D8CEA289ABDC800539BBF /* MainViewController.swift */; };
+		BD4D8CED289AEFE800539BBF /* journalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D8CEC289AEFE800539BBF /* journalViewController.swift */; };
 		BD6C578528982BC3001F28BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C578428982BC3001F28BD /* AppDelegate.swift */; };
 		BD6C578728982BC3001F28BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C578628982BC3001F28BD /* SceneDelegate.swift */; };
 		BD6C578928982BC3001F28BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C578828982BC3001F28BD /* ViewController.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD4D8CEA289ABDC800539BBF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BD4D8CEC289AEFE800539BBF /* journalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalViewController.swift; sourceTree = "<group>"; };
 		BD6C578128982BC3001F28BD /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6C578428982BC3001F28BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD6C578628982BC3001F28BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,7 +110,9 @@
 				BD6C578428982BC3001F28BD /* AppDelegate.swift */,
 				BD6C578628982BC3001F28BD /* SceneDelegate.swift */,
 				BD6C578828982BC3001F28BD /* ViewController.swift */,
+				BD4D8CEA289ABDC800539BBF /* MainViewController.swift */,
 				BD6C578A28982BC3001F28BD /* Main.storyboard */,
+				BD4D8CEC289AEFE800539BBF /* journalViewController.swift */,
 				BD6C57B7289968EC001F28BD /* cameraViewController.swift */,
 				BD6C579028982BC6001F28BD /* Assets.xcassets */,
 				BD6C579228982BC6001F28BD /* LaunchScreen.storyboard */,
@@ -267,8 +273,10 @@
 				BD6C578928982BC3001F28BD /* ViewController.swift in Sources */,
 				BD6C578528982BC3001F28BD /* AppDelegate.swift in Sources */,
 				BD6C57B8289968EC001F28BD /* cameraViewController.swift in Sources */,
+				BD4D8CEB289ABDC800539BBF /* MainViewController.swift in Sources */,
 				BD6C578F28982BC3001F28BD /* finalProject.xcdatamodeld in Sources */,
 				BD6C578728982BC3001F28BD /* SceneDelegate.swift in Sources */,
+				BD4D8CED289AEFE800539BBF /* journalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +453,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4FLF87F96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = finalProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -457,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kwk.finalProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JanSavage.sunreel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -472,6 +481,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F4FLF87F96;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = finalProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -484,7 +494,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kwk.finalProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JanSavage.sunreel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
