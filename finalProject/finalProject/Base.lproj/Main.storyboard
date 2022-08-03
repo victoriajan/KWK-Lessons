@@ -27,8 +27,8 @@
                                 <rect key="frame" x="0.0" y="89" width="414" height="734"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NHb-3r-JgC">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NHb-3r-JgC">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2500"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lR-ax-9eV">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="500"/>
@@ -78,7 +78,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TLQ-xh-h6Q">
-                                                                <rect key="frame" x="33" y="14" width="270" height="31"/>
+                                                                <rect key="frame" x="40" y="19" width="270" height="31"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="example.location, Michigan"/>
@@ -87,7 +87,7 @@
                                                                 </connections>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.80532256970000005" green="0.92957501220000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -112,12 +112,64 @@
                                                                 </buttonConfiguration>
                                                             </button>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.80532256970000005" green="0.92957501220000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_2474" translatesAutoresizingMaskIntoConstraints="NO" id="x94-De-T04">
-                                                        <rect key="frame" x="0.0" y="-10" width="414" height="452"/>
+                                                        <rect key="frame" x="-12" y="-15" width="426" height="460"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="f4b-wR-LN7">
+                                                        <rect key="frame" x="346" y="23" width="21" height="20"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p5C-9x-l6d">
+                                                        <rect key="frame" x="40" y="21" width="270" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="example.location, Michigan"/>
+                                                    </button>
+                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Aqz-nK-f5W">
+                                                        <rect key="frame" x="0.0" y="404" width="414" height="75"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgN-pF-REF">
+                                                                <rect key="frame" x="12" y="8" width="44" height="31"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="tinted" title="👤">
+                                                                    <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1hQ-bm-w8E">
+                                                                <rect key="frame" x="45" y="22" width="221" height="31"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="Harbor Springs, Michigan"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmY-Bj-SfZ">
+                                                                <rect key="frame" x="12" y="8" width="200" height="31"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="vicki.jan.510">
+                                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </buttonConfiguration>
+                                                            </button>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yns-3s-f58">
+                                                                <rect key="frame" x="344" y="19" width="21" height="20"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFx-pr-lKR">
+                                                        <rect key="frame" x="20" y="8" width="225" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="exampleUser.10">
+                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
@@ -126,15 +178,52 @@
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="400" id="K7f-Qo-CJq"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-qR-Ybj">
-                                                <rect key="frame" x="0.0" y="1000" width="414" height="500"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fO-qR-Ybj">
+                                                <rect key="frame" x="0.0" y="1000" width="414" height="1500"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aci-h4-DmI">
-                                                        <rect key="frame" x="8" y="28" width="414" height="391"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_2291" translatesAutoresizingMaskIntoConstraints="NO" id="aci-h4-DmI">
+                                                        <rect key="frame" x="-25" y="-121" width="439" height="500"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="500" id="QRP-Bm-sTv"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="414" id="VXr-Mj-qv1"/>
+                                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="jbY-iT-VP5"/>
+                                                            <constraint firstAttribute="width" constant="400" id="rSp-jt-cOo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_7698" translatesAutoresizingMaskIntoConstraints="NO" id="v9M-Gz-Zm5">
+                                                        <rect key="frame" x="-124" y="387" width="663" height="551"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39I-yb-TGE">
+                                                        <rect key="frame" x="18" y="348" width="44" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="tinted" title="👤">
+                                                            <color key="baseBackgroundColor" systemColor="systemIndigoColor"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4E-Hv-ULU">
+                                                        <rect key="frame" x="36" y="333" width="164" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="lorriesavage ">
+                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-E5-iHa">
+                                                        <rect key="frame" x="52" y="348" width="176" height="31"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Petoskey, Michigan"/>
+                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" red="0.82833148861218797" green="0.84956711163404197" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="aci-h4-DmI" secondAttribute="bottom" id="0wc-Lg-LNy"/>
+                                                    <constraint firstAttribute="height" constant="1500" id="3LT-ly-ePQ"/>
+                                                    <constraint firstItem="aci-h4-DmI" firstAttribute="top" secondItem="8fO-qR-Ybj" secondAttribute="top" id="DfN-pm-VQ6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="aci-h4-DmI" secondAttribute="trailing" id="R2y-u3-giq"/>
+                                                </constraints>
                                             </view>
                                         </subviews>
                                     </stackView>
@@ -232,16 +321,16 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="caption..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ip6-P5-QeT">
-                                <rect key="frame" x="39" y="684" width="339" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera9" translatesAutoresizingMaskIntoConstraints="NO" id="F4K-no-HF3">
                                 <rect key="frame" x="39" y="61" width="337" height="615"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="caption..." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ip6-P5-QeT">
+                                <rect key="frame" x="37" y="642" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JK5-Qe-oqE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -333,10 +422,22 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem id="y9B-MI-Xjy"/>
-                                    <barButtonItem image="homekit" catalog="system" style="plain" id="y9O-Lv-i5g"/>
-                                    <barButtonItem image="camera" catalog="system" style="plain" id="xey-EU-8y6"/>
+                                    <barButtonItem image="homekit" catalog="system" style="plain" id="y9O-Lv-i5g">
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="TBn-fC-x55"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem image="camera" catalog="system" style="plain" id="xey-EU-8y6">
+                                        <connections>
+                                            <segue destination="YSL-tQ-9ab" kind="presentation" modalPresentationStyle="currentContext" id="vIZ-qg-2eq"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="compose" id="t4E-yy-NYP"/>
-                                    <barButtonItem image="map" catalog="system" style="plain" id="8ag-b0-DrP"/>
+                                    <barButtonItem image="map" catalog="system" style="plain" id="8ag-b0-DrP">
+                                        <connections>
+                                            <segue destination="VQe-MC-Ns7" kind="presentation" modalPresentationStyle="fullScreen" id="uS6-W8-Tyk"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                                 <color key="barTintColor" systemColor="tertiarySystemBackgroundColor"/>
                             </toolbar>
@@ -434,14 +535,16 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="1Dm-na-qaw"/>
-        <segue reference="k9K-ef-iEp"/>
-        <segue reference="gy5-Xu-jPd"/>
+        <segue reference="joj-CU-pBL"/>
+        <segue reference="vIZ-qg-2eq"/>
         <segue reference="MWI-RW-3iU"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="IMG_2291" width="4032" height="3024"/>
         <image name="IMG_2473" width="828" height="1077"/>
         <image name="IMG_2474" width="828" height="609"/>
         <image name="IMG_7686" width="1011" height="1800"/>
+        <image name="IMG_7698" width="242" height="320"/>
         <image name="View recent photos" width="828" height="1416"/>
         <image name="camera" catalog="system" width="128" height="94"/>
         <image name="camera.fill" catalog="system" width="128" height="94"/>

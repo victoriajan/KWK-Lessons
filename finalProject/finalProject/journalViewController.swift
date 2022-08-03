@@ -12,6 +12,11 @@ class journalViewController: UIViewController {
     @IBOutlet weak var entry: UILabel!
     @IBOutlet weak var textField: UITextField!
     
+ 
+   /* override func touchesBegan(_ touches: Set<UITouch>, with event: view.endEditing(true)){
+        super.touchesBegan(touches, with: event)
+    }*/
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         entry.isHidden = true
