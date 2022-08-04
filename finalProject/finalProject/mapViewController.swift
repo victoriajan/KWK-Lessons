@@ -25,7 +25,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(map)
-        map.frame = view.bounds
+        map.frame = view.bounds // comment this, nav bar shows up without annots
         
         map.setRegion(MKCoordinateRegion(
             center: coordinate,
@@ -38,22 +38,29 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         addCustomPin()
     }
     
+   
+    
     private func addCustomPin() {
-        let pin = MKPointAnnotation()
+       
+        
+        let pin = CustomPointAnnotation()
         pin.coordinate = coordinate
         pin.title = "Harbor Point"
         pin.subtitle = "fan favorite sunset location"
+        pin.imageName = "harborSprings"
         map.addAnnotation(pin)
         
-        let pin2 = MKPointAnnotation()
+        let pin2 = CustomPointAnnotation()
         pin2.coordinate = coordinate2
         pin2.title = "Orchard Lake"
         pin2.subtitle = "local fan favorite"
+        pin2.imageName = "orchardLake"
         map.addAnnotation(pin2)
     }
     
     
     // Map
+  
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard !(annotation is MKUserLocation) else {
@@ -74,8 +81,11 @@ class mapViewController: UIViewController, MKMapViewDelegate {
             annotationView?.annotation = annotation
         }
         
-        annotationView?.image = UIImage(named: "harborSprings")
-        annotationView?.image = UIImage(named: "orchardLake")
+        
+        let cpa = annotation as! CustomPointAnnotation
+        annotationView?.image = UIImage(named: cpa.imageName)
+        
+      
         
         
         return annotationView
