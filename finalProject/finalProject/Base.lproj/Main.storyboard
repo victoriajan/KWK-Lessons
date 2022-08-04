@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -64,7 +64,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="example.location, Michigan"/>
                                                         <connections>
-                                                            <segue destination="VQe-MC-Ns7" kind="presentation" modalPresentationStyle="fullScreen" id="k9K-ef-iEp"/>
+                                                            <segue destination="VQe-MC-Ns7" kind="presentation" id="k9K-ef-iEp"/>
                                                         </connections>
                                                     </button>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9hY-wx-t4w">
@@ -78,7 +78,7 @@
                                                 <rect key="frame" x="0.0" y="65" width="414" height="500"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_2473" translatesAutoresizingMaskIntoConstraints="NO" id="Nc3-Qy-Ti5">
-                                                        <rect key="frame" x="0.0" y="-270" width="414" height="1047"/>
+                                                        <rect key="frame" x="0.0" y="-273" width="414" height="1050"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2530.434782608696" y="83.705357142857139"/>
+            <point key="canvasLocation" x="3440.579710144928" y="83.705357142857139"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="aUM-Ml-btk">
@@ -337,11 +337,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
-                                    <barButtonItem title="Item" image="homekit" catalog="system" id="1Pt-o7-gRm">
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="MWI-RW-3iU"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem title="Item" image="homekit" catalog="system" id="1Pt-o7-gRm"/>
                                     <barButtonItem image="camera.fill" catalog="system" style="plain" id="Vbh-f1-bML"/>
                                     <barButtonItem systemItem="compose" id="ZOL-ZC-UE6">
                                         <connections>
@@ -369,31 +365,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kBq-jA-ALb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3415.9420289855075" y="83.705357142857139"/>
+            <point key="canvasLocation" x="4326.086956521739" y="83.705357142857139"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="6n8-JB-elt">
             <objects>
                 <viewController id="VQe-MC-Ns7" customClass="mapViewController" customModule="finalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QFc-Zc-RfX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eC2-cO-pbQ">
-                                <rect key="frame" x="0.0" y="44" width="414" height="775"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eC2-cO-pbQ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="721"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="775" id="pwY-8J-08T"/>
-                                </constraints>
                             </mapView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kG-Mh-O9O">
-                                <rect key="frame" x="113" y="819" width="188" height="49"/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kG-Mh-O9O">
+                                <rect key="frame" x="113" y="765" width="188" height="49"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem image="homekit" catalog="system" style="plain" id="AxX-Ua-hvL">
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="A5T-ro-iC5"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem image="homekit" catalog="system" style="plain" id="AxX-Ua-hvL"/>
                                     <barButtonItem image="camera" catalog="system" style="plain" id="pNW-Rq-8k5">
                                         <connections>
                                             <segue destination="YSL-tQ-9ab" kind="presentation" modalPresentationStyle="fullScreen" id="XyD-Em-GlA"/>
@@ -411,24 +402,9 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="j0J-Lv-d4Q"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="eC2-cO-pbQ" firstAttribute="leading" secondItem="j0J-Lv-d4Q" secondAttribute="leading" id="01P-eJ-tBb"/>
-                            <constraint firstItem="eC2-cO-pbQ" firstAttribute="centerX" secondItem="9kG-Mh-O9O" secondAttribute="centerX" id="19Q-rf-FL3"/>
-                            <constraint firstItem="j0J-Lv-d4Q" firstAttribute="trailing" secondItem="eC2-cO-pbQ" secondAttribute="trailing" id="IBW-ob-Zww"/>
-                            <constraint firstItem="j0J-Lv-d4Q" firstAttribute="trailing" secondItem="eC2-cO-pbQ" secondAttribute="trailing" id="Oox-Uu-10r"/>
-                            <constraint firstItem="9kG-Mh-O9O" firstAttribute="leading" secondItem="j0J-Lv-d4Q" secondAttribute="leading" constant="113" id="PKK-rs-fB4"/>
-                            <constraint firstItem="j0J-Lv-d4Q" firstAttribute="bottom" secondItem="eC2-cO-pbQ" secondAttribute="bottom" id="REA-45-K5W"/>
-                            <constraint firstItem="eC2-cO-pbQ" firstAttribute="top" secondItem="j0J-Lv-d4Q" secondAttribute="top" id="Ruh-We-Xm9"/>
-                            <constraint firstItem="eC2-cO-pbQ" firstAttribute="leading" secondItem="j0J-Lv-d4Q" secondAttribute="leading" id="WiE-Yx-5lT"/>
-                            <constraint firstItem="9kG-Mh-O9O" firstAttribute="top" secondItem="eC2-cO-pbQ" secondAttribute="bottom" id="bz7-Jy-Xeb"/>
-                            <constraint firstItem="eC2-cO-pbQ" firstAttribute="top" secondItem="j0J-Lv-d4Q" secondAttribute="top" id="wkh-tQ-6Vk"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="REA-45-K5W"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="662-ed-1G6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oXc-eo-3qo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -453,11 +429,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
                                     <barButtonItem id="y9B-MI-Xjy"/>
-                                    <barButtonItem image="homekit" catalog="system" style="plain" id="y9O-Lv-i5g">
-                                        <connections>
-                                            <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="TBn-fC-x55"/>
-                                        </connections>
-                                    </barButtonItem>
+                                    <barButtonItem image="homekit" catalog="system" style="plain" id="y9O-Lv-i5g"/>
                                     <barButtonItem image="camera" catalog="system" style="plain" id="xey-EU-8y6">
                                         <connections>
                                             <segue destination="YSL-tQ-9ab" kind="presentation" modalPresentationStyle="currentContext" id="vIZ-qg-2eq"/>
@@ -567,10 +539,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AEk-ju-xPf"/>
-        <segue reference="uS6-W8-Tyk"/>
-        <segue reference="XyD-Em-GlA"/>
-        <segue reference="A5T-ro-iC5"/>
+        <segue reference="1Dm-na-qaw"/>
+        <segue reference="k9K-ef-iEp"/>
+        <segue reference="gy5-Xu-jPd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="IMG_2473" width="828" height="1077"/>
