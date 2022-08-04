@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1E9D4E289C078900D034DD /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1E9D4D289C078900D034DD /* mapViewController.swift */; };
 		BD4D8CEB289ABDC800539BBF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D8CEA289ABDC800539BBF /* MainViewController.swift */; };
 		BD4D8CED289AEFE800539BBF /* journalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D8CEC289AEFE800539BBF /* journalViewController.swift */; };
 		BD6C578528982BC3001F28BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C578428982BC3001F28BD /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD1E9D4D289C078900D034DD /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		BD4D8CEA289ABDC800539BBF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BD4D8CEC289AEFE800539BBF /* journalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = journalViewController.swift; sourceTree = "<group>"; };
 		BD6C578128982BC3001F28BD /* finalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = finalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +114,7 @@
 				BD6C578828982BC3001F28BD /* ViewController.swift */,
 				BD4D8CEA289ABDC800539BBF /* MainViewController.swift */,
 				BD6C578A28982BC3001F28BD /* Main.storyboard */,
+				BD1E9D4D289C078900D034DD /* mapViewController.swift */,
 				BD4D8CEC289AEFE800539BBF /* journalViewController.swift */,
 				BD6C57B7289968EC001F28BD /* cameraViewController.swift */,
 				BD6C579028982BC6001F28BD /* Assets.xcassets */,
@@ -277,6 +280,7 @@
 				BD6C578F28982BC3001F28BD /* finalProject.xcdatamodeld in Sources */,
 				BD6C578728982BC3001F28BD /* SceneDelegate.swift in Sources */,
 				BD4D8CED289AEFE800539BBF /* journalViewController.swift in Sources */,
+				BD1E9D4E289C078900D034DD /* mapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

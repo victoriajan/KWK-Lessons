@@ -11,6 +11,13 @@ class cameraViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     var imagePicker = UIImagePickerController()
     
+    
+    @IBOutlet weak var caption: UILabel!
+    @IBOutlet weak var enterCaption: UITextField!
+    @IBOutlet weak var saveCap: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
