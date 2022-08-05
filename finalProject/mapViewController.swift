@@ -25,7 +25,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(map)
-        map.frame = view.frame // comment this, nav bar shows up without annots
+        map.frame = view.bounds // comment this, nav bar shows up without annots
         
         map.setRegion(MKCoordinateRegion(
             center: coordinate,
@@ -42,6 +42,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
     
     private func addCustomPin() {
        
+        
         let pin = CustomPointAnnotation()
         pin.coordinate = coordinate
         pin.title = "Harbor Point"
